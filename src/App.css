@@ -1,0 +1,83 @@
+.viewer {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: #0d0f14;
+}
+
+.viewer canvas {
+  touch-action: none;
+}
+
+.viewer-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 14px 20px 8px;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.viewer-header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-family: var(--heading);
+}
+
+.viewer-header p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.mode-switch {
+  position: absolute;
+  top: 78px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+}
+
+.mode-switch button {
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(20, 20, 25, 0.55);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.mode-switch button:hover {
+  border-color: var(--accent-border);
+}
+
+.mode-switch button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.hint {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  margin: 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #fff;
+  background: rgba(20, 20, 25, 0.55);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  max-width: 90vw;
+}
