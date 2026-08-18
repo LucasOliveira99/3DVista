@@ -1,4 +1,4 @@
-# ObraVista 3D
+# 3DVista
 
 Este projeto é uma experiência web para visualizar e explorar um projeto de engenharia em 3D. A ideia é que uma pessoa escaneie um QR Code instalado em uma obra e consiga conhecer, pelo celular ou computador, como o espaço ficará depois de concluído.
 
